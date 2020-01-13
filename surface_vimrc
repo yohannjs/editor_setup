@@ -9,6 +9,8 @@ colorscheme desert " Different on different computors
 set nu rnu
 " Default is nowrap
 set nowrap
+" Set pythonx version to 3
+set pyxversion=3
 
 "----------- vim-plug plugin manager -----------
 " To install plugin manager:
@@ -32,6 +34,33 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
+
+" For git control
+Plug 'tpope/vim-fugitive' " https://github.com/tpope/vim-fugitive
+Plug 'airblade/vim-gitgutter'
+
+" Linting, syntax checking and semantic errors
+Plug 'w0rp/ale'
+
+" Lean & mean status/tabline for vim that's light as air
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='kalisi'
+
+" Package for easily changing delimiters. See https://github.com/tpope/vim-surround
+Plug 'tpope/vim-surround'
+
+" To comment out lines.
+" Comment out line in normal mode : gcc
+" Comment out lines in visual mode: gc
+" For the rest see https://github.com/tpope/vim-commentary
+Plug 'tpope/vim-commentary'
+
+" Simple way to align paragraphs. Check out tutorial here: https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+
+" Adds some additional highlighting to text. Seems harmless, so I'll use it
+Plug 'pearofducks/ansible-vim'
 call plug#end()
 " To install plugins listed above:
 " :PlugInstall
