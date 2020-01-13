@@ -4,7 +4,7 @@ set shiftwidth=4
 set expandtab
 " Syntax and colouring
 syntax on
-colo desert
+colorscheme desert " Different on different computors
 " Line numbering (relative except current line)
 set nu rnu
 " Default is nowrap
