@@ -27,10 +27,10 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " pynvim must be installed for this plugin to work. Please run command below
 " before using package.
 " pip3 install --user --upgrade pynvim
-"Plug 'Shougo/deoplete.nvim'
-"Plug 'roxma/nvim-yarp'
-"Plug 'roxma/vim-hug-neovim-rpc'
-"let g:deoplete#enable_at_startup = 1
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+let g:deoplete#enable_at_startup = 1
 
 " For git control
 Plug 'tpope/vim-fugitive' " https://github.com/tpope/vim-fugitive
