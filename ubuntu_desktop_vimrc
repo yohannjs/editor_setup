@@ -22,15 +22,13 @@ Plug 'tpope/vim-sensible'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-" Autocomplete NOT WORKING ATM, NEED TO UNINSTALL ANACONDA, VIM AND PYTHON AND
-" THEN REINSTALL EVERYTHING TO FIX
 " pynvim must be installed for this plugin to work. Please run command below
 " before using package.
 " pip3 install --user --upgrade pynvim
-"Plug 'Shougo/deoplete.nvim'
-"Plug 'roxma/nvim-yarp'
-"Plug 'roxma/vim-hug-neovim-rpc'
-"let g:deoplete#enable_at_startup = 1
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+let g:deoplete#enable_at_startup = 1
 
 " For git control
 Plug 'tpope/vim-fugitive' " https://github.com/tpope/vim-fugitive
@@ -55,6 +53,11 @@ Plug 'tpope/vim-commentary'
 
 " Simple way to align paragraphs. Check out tutorial here: https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+"
+" " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Adds some additional highlighting to text. Seems harmless, so I'll use it
 Plug 'pearofducks/ansible-vim'
