@@ -40,7 +40,7 @@ Plug 'tpope/vim-fugitive' " https://github.com/tpope/vim-fugitive
 Plug 'airblade/vim-gitgutter'
 
 " Linting, syntax checking and semantic errors
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 
 " Lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline'
@@ -61,9 +61,13 @@ Plug 'junegunn/vim-easy-align'
 
 " Adds some additional highlighting to text. Seems harmless, so I'll use it
 Plug 'pearofducks/ansible-vim'
+
+" For integrating latex in vim
+" Plug 'lervag/vimtex'
+
 call plug#end()
 " To install plugins listed above:
 " :PlugInstall
 " repo for plugin manager: 
 " https://github.com/junegunn/vim-plug
-"----------- vim-plug plugin manager -----------
+"
